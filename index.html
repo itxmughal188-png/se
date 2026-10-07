@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <canvas id="stars"></canvas>
+        <canvas id="effects"></canvas>
+
+        <div class="grain"></div>
+
+        <button id="muteBtn" class="mute-btn">🔊</button>
+
+        <div class="progress" id="progress">01 / 09</div>
+
+        <audio id="music" loop>
+            <source src="assets/birthday.mp3" type="audio/mpeg">
+        </audio>
+
+        <main id="reel">
+
+            <!-- SCENE 1 -->
+            <section class="scene active" id="scene1">
+
+                <div class="content">
+
+                    <p class="fade">Wait...</p>
+
+                    <p class="fade delay1">
+                        Before you scroll...
+                    </p>
+
+                    <div class="big-heart">❤️</div>
+
+                    <p class="small fade delay2">
+                        I made something special for you.
+                    </p>
+
+                    <button id="beginBtn" class="main-btn fade delay3">
+                        Tap to Begin ✨
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- SCENE 2 -->
+            <section class="scene" id="scene2">
+
+                <div class="content">
+
+                    <p class="small-text">
+                        Today is different...
+                    </p>
+
+                    <p class="small-text">
+                        Because today...
+                    </p>
+
+                    <h1>
+                        <span id="name1">Saher</span>
+                        WAS BORN ❤️
+                    </h1>
+
+                    <p class="scroll-hint">
+                        Keep going ↓
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- SCENE 3 -->
+            <section class="scene" id="scene3">
+
+                <div class="content">
+
+                    <p class="script">
+                        A little birthday magic...
+                    </p>
+
+                    <div id="cake" class="cake">
+
+                        <div class="candle candle1">
+                            <div class="flame"></div>
+                        </div>
+
+                        <div class="candle candle2">
+                            <div class="flame"></div>
+                        </div>
+
+                        <div class="candle candle3">
+                            <div class="flame"></div>
+                        </div>
+
+                        <div class="cake-top"></div>
+                        <div class="cake-middle"></div>
+                        <div class="cake-bottom"></div>
+
+                    </div>
+
+                    <p id="cakeHint" class="scroll-hint">
+                        Tap the cake ✨
+                    </p>
+
+                    <h2 id="cakeMessage"></h2>
+
+                </div>
+
+            </section>
+
+
+            <!-- SCENE 4 -->
+            <section class="scene" id="scene4">
+
+                <div class="content">
+
+                    <h2>
+                        Our Little Collection ❤️
+                    </h2>
+
+                    <div class="photos">
+
+                        <div class="photo">
+                            <img src="assets/photo1.jpg" alt="Memory 1">
+                            <p>That smile...</p>
+                        </div>
+
+                        <div class="photo">
+                            <img src="assets/photo2.jpg" alt="Memory 2">
+                            <p>One of my favorite moments.</p>
+                        </div>
+
+                        <div class="photo">
+                            <img src="assets/photo3.jpg" alt="Memory 3">
+                            <p>A memory worth keeping forever.</p>
+                        </div>
+
+                        <div class="photo">
+                            <img src="assets/photo4.jpg" alt="Memory 4">
+                            <p>Some moments are unforgettable.</p>
+                        </div>
+
+                    </div>
+
+                    <p class="memory-text">
+                        Somehow, every memory became more beautiful
+                        because you were in it. ❤️
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- SCENE 5 -->
+            <section class="scene" id="scene5">
+
+                <div class="content">
+
+                    <p class="script">
+                        I wrote something for you...
+                    </p>
+
+                    <div id="envelope" class="envelope">
+
+                        <div class="envelope-back"></div>
+
+                        <div class="letter">
+
+                            <h3>
+                                Dear <span id="name2">Saher</span>,
+                            </h3>
+
+                            <p>
+                                I don't know if words can completely explain
+                                how special you are.
+                            </p>
+
+                            <p>
+                                Your smile, your kindness, and all the little
+                                moments make life brighter.
+                            </p>
+
+                            <p>
+                                I hope this new year of your life brings you
+                                happiness, peace, success and beautiful memories.
+                            </p>
+
+                            <p>
+                                Never forget how amazing you are. ❤️
+                            </p>
+
+                            <p class="signature">
+                                — Someone who wishes you the best ❤️
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <button id="letterBtn" class="main-btn">
+                        Open the Letter 💌
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- SCENE 6 -->
+            <section class="scene" id="scene6">
+
+                <div class="content">
+
+                    <h2>
+                        Little Moments...
+                    </h2>
+
+                    <div class="timeline">
+
+                        <div class="timeline-card">
+
+                            <span>DAY ONE</span>
+
+                            <h3>The Beginning</h3>
+
+                            <p>
+                                Every beautiful story has a beginning.
+                            </p>
+
+                        </div>
+
+
+                        <div class="timeline-card">
+
+                            <span>A MOMENT</span>
+
+                            <h3>That Unforgettable Moment</h3>
+
+                            <p>
+                                Some moments stay in your heart forever.
+                            </p>
+
+                        </div>
+
+
+                        <div class="timeline-card">
+
+                            <span>EVERY TIME</span>
+
+                            <h3>The Random Laughs</h3>
+
+                            <p>
+                                The little laughs that make everything better.
+                            </p>
+
+                        </div>
+
+
+                        <div class="timeline-card">
+
+                            <span>SOON</span>
+
+                            <h3>More Memories</h3>
+
+                            <p>
+                                There are still so many beautiful moments ahead.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- SCENE 7 -->
+            <section class="scene" id="scene7">
+
+                <div id="giftArea" class="content">
+
+                    <p>
+                        Okay...
+                    </p>
+
+                    <p>
+                        One last thing.
+                    </p>
+
+                    <div id="gift" class="gift">
+
+                        <div class="gift-lid"></div>
+                        <div class="gift-box"></div>
+                        <div class="gift-ribbon"></div>
+
+                    </div>
+
+                    <button id="giftBtn" class="main-btn">
+                        Open It 🎁
+                    </button>
+
+                </div>
+
+
+                <div id="giftMessage" class="content hidden">
+
+                    <p class="script">
+                        You thought that was everything?
+                    </p>
+
+                    <h2>
+                        Not even close. ❤️
+                    </h2>
+
+                </div>
+
+            </section>
+
+
+            <!-- SCENE 8 -->
+            <section class="scene" id="scene8">
+
+                <div class="content">
+
+                    <div class="balloons">
+                        🎈 🎈 🎈
+                    </div>
+
+                    <h1 class="birthday-title">
+                        HAPPY BIRTHDAY
+                    </h1>
+
+                    <h1 class="birthday-name" id="name3">
+                        Saher
+                    </h1>
+
+                    <p>
+                        May your life always be filled with
+                        moments that feel like fireworks. ✨
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- SCENE 9 -->
+            <section class="scene" id="scene9">
+
+                <div id="finalStart" class="content">
+
+                    <p>
+                        But wait...
+                    </p>
+
+                    <p>
+                        There's something I didn't tell you.
+                    </p>
+
+                    <div id="portal" class="portal">
+                        ❤️
+                    </div>
+
+                    <p class="scroll-hint">
+                        Tap the heart
+                    </p>
+
+                </div>
+
+
+                <div id="finalMessage" class="final-message hidden">
+
+                    <p>
+                        No matter where life takes you...
+                    </p>
+
+                    <p>
+                        I hope you always remember this.
+                    </p>
+
+                    <p>
+                        Someone out there is genuinely grateful
+                        that you exist. ❤️
+                    </p>
+
+                </div>
+
+
+                <div id="ending" class="ending hidden">
+
+                    <p>Another year.</p>
+
+                    <p>Another chapter.</p>
+
+                    <p>Another thousand reasons to smile.</p>
+
+                    <h2>
+                        Happy Birthday,
+                        <span id="name4">Saher</span> ❤️
+                    </h2>
+
+                    <p>
+                        Keep shining. ✨
+                    </p>
+
+                    <small>
+                        Made with ❤️ just for you.
+                    </small>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
